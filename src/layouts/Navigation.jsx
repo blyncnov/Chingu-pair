@@ -1,6 +1,9 @@
 import React from "react";
 
+// Navigation CSS
 import "./Navigation.scss";
+
+// Icons
 import { HiOutlineShoppingCart } from "react-icons/hi";
 
 const Navigation = () => {

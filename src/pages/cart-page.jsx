@@ -5,12 +5,16 @@ import { useSelector } from "react-redux";
 const Cart = () => {
   const Cart = useSelector((state) => state.cartReducer.cart);
 
+  const TotalAmout = Cart.reduce((total, item) => {
+    return (total += item.price);
+  }, 0);
+
   return (
     <>
       <br />
       <div className="Layout__Grid">
         <h4>Cart (0)</h4>
-        <hr />
+
         <br />
         <div className="Layout__Grid__Cart">
           {Cart.map((product) => {
@@ -27,6 +31,8 @@ const Cart = () => {
             );
           })}
         </div>
+        <br />
+        <h3>Total Price: {TotalAmout}</h3>
       </div>
     </>
   );

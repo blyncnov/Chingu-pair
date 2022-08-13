@@ -1,7 +1,7 @@
 import React from "react";
 import { ADD__TO__CART } from "../../store/actions/action";
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 // Products data
 import MockedProducts from "././../../data/product";
@@ -12,9 +12,20 @@ import "./Product.scss";
 const Product = ({ product }) => {
   const dispatch = useDispatch();
 
+  const Cart = useSelector((state) => state.cartReducer.cart);
+
   const addToCart = (id) => {
-    const Item = MockedProducts.find((item) => item.id === id);
-    dispatch({ type: ADD__TO__CART, payload: Item });
+    const isItemExistInCart = Cart.find((item) => item.id === id);
+
+    if (isItemExistInCart) {
+      return alert("Item Already Exists in Cart");
+    } else {
+      const Item = MockedProducts.find((item) => item.id === id);
+      dispatch({
+        type: ADD__TO__CART,
+        payload: Item,
+      });
+    }
   };
 
   return (

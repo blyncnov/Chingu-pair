@@ -8,12 +8,14 @@ import "./index.css";
 import App from "./App";
 
 import reportWebVitals from "./reportWebVitals";
+import Navigation from "./layouts/Navigation";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Navigation />
       <Routes>
         <Route path="/" element={<App />}></Route>
         <Route path="/cart" element={<App />}></Route>

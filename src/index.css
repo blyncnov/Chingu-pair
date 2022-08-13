@@ -21,3 +21,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.Layout__Grid {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}

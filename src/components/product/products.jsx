@@ -16,7 +16,11 @@ const Products = () => {
         <div className="Products__Header">
           <h3>All Our Products</h3>
         </div>
-        <Product />
+        <div className="Products__Container__Grid">
+          {MockedProducts.map((product) => {
+            return <Product key={product.id} product={product} />;
+          })}
+        </div>
       </div>
     </>
   );

@@ -1,33 +1,52 @@
 const Product = [
   {
     id: 1,
-    name: "Product 1",
-    description: "Product 1 description",
-    price: "$100",
+    name: "Learn JavaScript",
+    image:
+      "https://images-na.ssl-images-amazon.com/images/I/41BhGsAx7lL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg",
+    description:
+      "Learn JavaScript Quickly: A Complete Beginner’s Guide to Learning JavaScript, Even If You’re New to Programming",
+    price: "100",
   },
   {
     id: 2,
-    name: "Product 2",
-    description: "Product 2 description",
-    price: "$60",
+    name: "Learn JavaScript",
+    image: "https://m.media-amazon.com/images/I/71f7ATQsGwL._AC_UL320_.jpg",
+    description:
+      "Beginning ReactJS Foundations Building User Interfaces with ReactJS: An Approachable Guide",
+    price: "60",
   },
   {
     id: 3,
-    name: "Product 3",
-    description: "Product 3 description",
-    price: "$70",
+    name: "Learn JavaScript",
+    image: "https://m.media-amazon.com/images/I/81DeofNaE8S._AC_UL320_.jpg",
+    description:
+      "Beginning ReactJS Foundations Building User Interfaces with ReactJS: An Approachable Guide",
+    price: "40",
   },
   {
     id: 4,
-    name: "Product 4",
-    description: "Product 4 description",
-    price: "$70",
+    name: "Learn JavaScript",
+    image: "https://m.media-amazon.com/images/I/71kKIvxPjDL._AC_UL320_.jpg",
+    description:
+      "Beginning ReactJS Foundations Building User Interfaces with ReactJS: An Approachable Guide",
+    price: "20",
   },
   {
     id: 5,
-    name: "Product 5",
-    description: "Product 5 description",
-    price: "$70",
+    name: "Learn JavaScript",
+    image: "https://m.media-amazon.com/images/I/41YuXiubLOL._AC_UL320_.jpg",
+    description:
+      "Beginning ReactJS Foundations Building User Interfaces with ReactJS: An Approachable Guide",
+    price: "70",
+  },
+  {
+    id: 5,
+    name: "Learn JavaScript",
+    image: "https://m.media-amazon.com/images/I/81TlSpbHa6L._AC_UL320_.jpg",
+    description:
+      "Beginning ReactJS Foundations Building User Interfaces with ReactJS: An Approachable Guide",
+    price: "30",
   },
 ];
 

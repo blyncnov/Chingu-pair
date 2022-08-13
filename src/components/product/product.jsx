@@ -11,11 +11,12 @@ const Product = ({ product }) => {
       </div>
       <div className="product__info__container">
         <h3>{product.name} </h3>
-        <p className="product__info__title">{product.description}</p>
+        <p className="product__info__title">
+          {product.description.slice(0, 100) + "..."}
+        </p>
         <h2 className="product__info__price">
           <sup>$</sup>
-          {product.price}.
-          <sup>00</sup>
+          {product.price}.<sup>00</sup>
         </h2>
         <div className="product__btn">
           <button className="product__info__button">Add to Cart</button>

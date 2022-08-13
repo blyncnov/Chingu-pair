@@ -1,9 +1,22 @@
 import React from "react";
+import { ADD__TO__CART } from "../../store/actions/action";
+
+import { useDispatch } from "react-redux";
+
+// Products data
+import MockedProducts from "././../../data/product";
 
 // Product CSS
 import "./Product.scss";
 
 const Product = ({ product }) => {
+  const dispatch = useDispatch();
+
+  const addToCart = (id) => {
+    const Item = MockedProducts.find((item) => item.id === id);
+    dispatch({ type: ADD__TO__CART, payload: Item });
+  };
+
   return (
     <div className="product__container">
       <div className="product__Image__container">
@@ -16,10 +29,16 @@ const Product = ({ product }) => {
         </p>
         <h2 className="product__info__price">
           <sup>$</sup>
-          {product.price}.<sup>00</sup>
+          {product.price}
+          <sup>.00</sup>
         </h2>
         <div className="product__btn">
-          <button className="product__info__button">Add to Cart</button>
+          <button
+            onClick={() => addToCart(product.id)}
+            className="product__info__button"
+          >
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>

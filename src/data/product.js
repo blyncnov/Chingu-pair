@@ -41,7 +41,7 @@ const Product = [
     price: "70",
   },
   {
-    id: 5,
+    id: 6,
     name: "Learn JavaScript",
     image: "https://m.media-amazon.com/images/I/81TlSpbHa6L._AC_UL320_.jpg",
     description:

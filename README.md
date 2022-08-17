@@ -16,7 +16,7 @@ This `Project` is currently under development .
 Live Site URl : [chingu-cart](https://chingu-cart.vercel.app/)
 
 ## My Process
-I started this `Project` by bootraping React js and then installing scss .. I started by making the folder structure . 
+I started this `Project` by bootstrapping React js and then installing scss .. I started by making the folder structure . 
 
 
 ## Built With
@@ -38,6 +38,5 @@ I started this `Project` by bootraping React js and then installing scss .. I st
 
 ## Developer Information
 
-* Website [`Sage`](https://Sage.com/).
-* Twitter [`@sage`](https://twitter.com/Sage).
-* Linkedin [`Sage `](https://linkedin.com/in/Sage).
+* Twitter [`@Ominyi_sage`](https://twitter.com/Sage).
+* Linkedin [`Paul Saje`](https://linkedin.com/in/paul-saje).

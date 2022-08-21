@@ -16,6 +16,19 @@ export const cartReducers = (state = InitialState, action) => {
         ...state,
         cart: [],
       };
+    case "INCREASE__QTY":
+      return {
+        ...state,
+        Qty: state.cart.find((item) => {
+          const FiVgall = item.id === action.payload;
+          return console.log(FiVgall);
+        }),
+      };
+    case "REMOVE__FROM__CART":
+      return {
+        ...state,
+        cart: state.cart.filter((item) => item.id !== action.payload),
+      };
     default:
       return state;
   }

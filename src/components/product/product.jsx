@@ -23,7 +23,7 @@ const Product = ({ product }) => {
       const Item = MockedProducts.find((item) => item.id === id);
       dispatch({
         type: ADD__TO__CART,
-        payload: Item,
+        payload: { Qty: 1, ...Item },
       });
     }
   };
